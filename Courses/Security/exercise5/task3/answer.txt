@@ -1,0 +1,5 @@
+Problemet med script.sh er at den søker gjennom jpg mappa og sender den til flyttjpg
+Problemet med flyttjpg er at den vil få tilsendt en liste av jpg funnet i jpg mappa og vil rekursiv lage en mappe som heter jpg, 
+da vil man etterhvert få mappestrukturen jpg/jpg/jpg
+
+jeg har endret script.sh til å eksludere jpg mappa.

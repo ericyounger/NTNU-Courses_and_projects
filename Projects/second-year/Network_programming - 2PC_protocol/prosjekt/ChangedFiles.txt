@@ -1,0 +1,1 @@
+1587508017;ServerSocket.cpp:1587508078;client:1587508078;FileComparator.cpp:1587508078;server:1587508078;FileChecker.cpp:1587508078;ChangelogParser.cpp:1587508078;Output.txt:1587508078;test:1587508078;Worker.cpp:1587508078;FileTester.cpp:1587508078;ServerChangedFiles.txt:1587508036;CMakeFiles:1587508030;ClientSocket.cpp:1587508078;TUI.cpp:1587508078

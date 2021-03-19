@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Bilder av dyr</string>
+    <string-array name="imageTitles">
+        <item >Katt</item>
+        <item >Hund</item>
+        <item >Tiger</item>
+    </string-array>
+
+    <string-array name="imageDescription">
+        <item >Katter er spesielle</item>
+        <item >Hunder liker å gå turer</item>
+        <item >Tigre er farlige!</item>
+    </string-array>
+
+    <array name="animalImages">
+        <item>@drawable/cat</item>
+        <item>@drawable/dog</item>
+        <item>@drawable/tiger</item>
+    </array>
+
+</resources>

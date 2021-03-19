@@ -1,0 +1,10 @@
+Oppgave2
+
+Hva vil skje hvis du skriver:
+char *line = nullptr;   // eller char *line = 0;
+strcpy(line, "Dette er en tekst");
+
+Svar:
+Ved å sette *line = 0(eller nullptr) så blir det lagd plass til en peker som ikke peker til noe.
+Når man tar strcpy så vil man prøve å kopiere over tekststrengen til et beskyttet minneområdet som da vil gi segmentation fault.
+Det kan forøvrig nevnes at det ikke er en char array så det går heller ikke an å sette inn en tekststreng i en char peker variabel.

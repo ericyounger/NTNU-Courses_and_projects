@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/previousImage"
+        android:title="Forrige" />
+    <item
+        android:id="@+id/nextImage"
+        android:title="Neste" />
+</menu>

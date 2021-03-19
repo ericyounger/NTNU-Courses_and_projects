@@ -1,0 +1,35 @@
+* Oppgave 1.)
+Optimistisk låsing skiller seg ifra pessimistisk låsing(standard låsing) med at det egner seg for systemer med
+få konflikter, hvor de fleste leser, og for interaktive databaseapplikasjoner.
+
+Med optimistisk låsing så blir alle transaksjoner utført uten restriksjoner frem til commit, men skriver alikevell til en lokal kopi.
+
+Alt av lokale kopier blir validert før de blir skrevet til databasen.
+
+Det fungerer slik at det blir lagd et ekstra felt i databasetabellen, som oppdateres hver gang noen skriver til databaseraden.
+Dermed kan man se på dette feltet om det har blitt oppdatert etter at du leste ut verdiene.
+
+
+
+* Oppgave 2.)
+-Se KlientOppg2 for løsning
+
+* Oppgave 3.)
+Uten @version så blir det feil, har lagt ved feilSaldoUtenLaas.png hvor det viser at
+istedet for å føre over 100 kr to ganger, så ble det ført over 150 kr.
+Det viser at det kan bli feil med simultante transaksjoner.
+
+
+*Oppgave 4.)
+La til:
+    @Version // Lock for task 4.
+    private int laasingsFelt; // Lock for task 4.
+
+Da opprettet persistence en ekstra kolonne i tabellen, som brukes for verisjonskontroll, for å sjekke at det
+ikke ble lest på et tidspunkt som den andre transaksjonen holdt på, persistence holder automatisk kontroll
+på dette for oss.
+
+Etter at den optimistiske låsen ble innført, så vil det nå kastes exceptions (RollbackExceptions og OptimisticLockException)
+Dermed kan man ta tak i denne exception og kjøre en transaksjon på nytt f.eks eller gi tilbakemelding til bruker.
+
+

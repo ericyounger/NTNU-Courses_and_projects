@@ -1,0 +1,22 @@
+Oppgave 3.
+Finn ting som kan gå galt i følgende programbit:
+
+char text[5];
+char *pointer = text;
+char search_for = 'e';
+
+cin >> text; //Må passe på at tekststrengen som leses ikke er større en 5 i lengde.
+
+while (*pointer != search_for) {
+  *pointer = search_for; //erstatter tegnet på n plass med 'e'
+  pointer++; // inkrementerer peker til neste tegn.
+}
+
+
+Svar:
+Har skrevet litt kommentarer på koden ovenfor, men i bunn og grunn så må det passes på at inputstrengen ikke er større enn enn avsatt plass til array,
+da prøver den å skrive over lengden avsatt i minnet til array vil den få segmentation fault.
+I tillegg så vil hvert tegn erstattes med 'e'.
+
+Da vil man ende opp med en streng som er "eeeee".
+Og hvis ingen av tegnene inneholder 'e', så vil den prøve å skrive over lengden sin på 5 og få segmentation fault.

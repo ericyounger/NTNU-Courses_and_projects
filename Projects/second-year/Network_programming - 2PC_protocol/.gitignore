@@ -1,0 +1,10 @@
+.vscode
+.idea*
+.idea
+.out
+.cmake-build-debug
+/vscode
+prosjekt/a.out
+prosjekt/cmake-build-debug/
+prosjekt/testClient
+/docs/

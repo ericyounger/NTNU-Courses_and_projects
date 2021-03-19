@@ -1,0 +1,42 @@
+Oppgave 1:
+wget https://cdn.pixabay.com/photo/2017/09/25/13/12/dog-2785074__340.jpg
+
+
+Oppgave 2:
+#/bin/sh
+find ~/Desktop/testFolder/ -mtime -7 -size +10k ! -name '*.gz' ! -name '*.zip' -exec gzip -q * -k {}  \;
+
+Oppgave 3:
+Problemet med script.sh er at den søker gjennom jpg mappa og sender jpg bildene i den og inn til å flyttes.
+Problemet med flyttjpg er at den vil få tilsendt en liste av jpg funnet i jpg mappa og vil rekursiv lage en mappe som heter jpg,
+da vil man etterhvert få mappestrukturen jpg/jpg/jpg
+
+jeg har endret script.sh til å eksludere jpg mappa.
+
+Oppgave 4:
+shell.sh:
+find ~/Desktop/testFolder/ -name "*.txt" -exec ./copyfiles.sh {} \;
+
+copyfiles.sh:
+#/bin/sh
+
+file=$1
+cp $file "$file.kopi"
+
+Oppgave 5:
+#/bin/sh
+
+# Skriver ut hvilken bruker som kjører kommandoen
+echo Jeg heter `whoami`
+
+# deklarerer en variabel med navn maskinnavn som kjører hostname og setter variabelen til dette
+MASKIN=`hostname`
+
+#maskin blir eric-macbook
+
+#grav-aksenter vil kjøres som kommandoer først, og utskriften fra de vil settes inn istedet for aksentene. deretter kjøres hele kommandoen.
+
+Oppgave 6:
+0 8-12,13-16 * * 1-5 root killall quake
+30-58 12-16 * * 1-5 root killall quake
+

@@ -1,0 +1,17 @@
+b) Teori:
+Forklar hvordan 5 - 3 - fraction1 - 7 - fraction2 blir tolket. Hvilke versjoner av operatoren - blir brukt?
+
+
+5 - 3 kaller standard operatoren operatoren (-) i c++.
+
+
+(5-3)- fraction1 kaller friend operatoren (-) til Fraction som returnerer en Fraction som vi kaller a1
+friend Fraction operator-(int wholeNumber, const Fraction &other); // Funksjon som blir kallt
+
+
+(a1) - 7 som kaller operatoren(-) inne i Fraction som returnerer en ny fraction a2.
+Fraction operator-(const int wholenumber) const; // Funksjon som blir kallt
+
+
+(a2) - fraction 2, kaller på operatoren:
+Fraction operator-(const Fraction &other) const; // Funksjon som blir kallt

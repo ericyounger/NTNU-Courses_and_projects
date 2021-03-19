@@ -1,0 +1,23 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ master, Testing]
+
+jobs:
+  tests:
+    name: Running Unit Tests
+    runs-on: macos-latest
+    env: 
+      working_directory: ./prosjekt/test
+    
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Compile test
+      working-directory: ${{env.working_directory}}
+      run: g++ tester.cpp -o testing -std=c++17 -pthread
+    - name: Run test
+      working-directory: ${{env.working_directory}}
+      run: ./testing
+    

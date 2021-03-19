@@ -1,0 +1,79 @@
+function [yErrors] = Task6b() 
+    format long;
+    
+    %initialize matrix with two columns filled with zeroes for y.
+    y = zeros(11, 2);
+    
+    %initialize matrix with two columns filled with zeros for y errors
+    yErrors = zeros(11, 3);
+    
+    %Constants
+    gravityConstant = -9.81;
+    heightOfBeam = 0.03;
+    widthOfBeam = 0.30;
+    lengthOfBoard = 2.0;            
+    density = 480;  
+    E = 1.3e10;     
+    
+    % Area moment of inertia
+    I = widthOfBeam*heightOfBeam^3/12; 
+    
+    % Stated as p in the assignment
+    pressure = 100;      
+    
+    f = density * widthOfBeam * heightOfBeam * gravityConstant;
+
+    
+    % We print the correct y value for a sinusoidal load, defined in the
+    % function GetYSinusoidalLoad(x)
+    fprintf('Correct y at x=L: %.20f\n', GetYSinusoidalLoad(lengthOfBoard));
+
+    for i = 1:11
+        %N is 20, 40 ,,, 10*2^11 in this for loop
+        n = 10*2^i;
+        
+        %set matrix A with new N
+        A = Task2(n);
+        
+        %Set steplength
+        stepLength = lengthOfBoard / n;
+        
+        %The container for the steps
+        x_vector = zeros(n, 1);
+        
+        for a=1:n
+           x_vector(a) = a * stepLength; 
+        end
+        
+        %The function we add to f(x), representing the sinusoidal load
+        s = @(x) (pressure * gravityConstant * sin((pi/lengthOfBoard) *x));
+              
+        %Get the f(x) for each point in x, using the function s
+        b = GetF_X(s, x_vector);
+        
+        %Solve for displacement y
+        y_vector = A\b;
+        
+        %Set the y matrix (position x, displacement y)
+        y(i, 1) = n;
+        y(i, 2) = y_vector(n);
+        
+        fprintf('\n n=%i -> y=%.20f\n', n, y(i, 2));
+        
+        %Set the y error matrix (poisition x, displacement error y)
+        yErrors(i, 1) = n;
+        yErrors(i, 2) = abs(GetYSinusoidalLoad(lengthOfBoard) - y(i, 2));
+        
+        fprintf('Error at n=%i: %.20f\n', n, yErrors(i, 2));
+        
+        %set conditional number in third column
+        yErrors(i, 3) = condest(A);
+        
+        %
+        if (i > 1)
+           fprintf('Error compared to previous error: %.20f\n', (yErrors(i, 2) / yErrors(i - 1, 2)));
+        end
+    end
+    %Plot the correct sinusoidal load at x=L against the calculated values
+    plot(ones(11, 1) * GetYSSinusoidalLoad(lengthOfBoard), y(:,2));
+end

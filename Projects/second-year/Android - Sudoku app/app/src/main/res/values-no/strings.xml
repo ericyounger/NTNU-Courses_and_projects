@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Sudoku</string>
+    <string name="instruction_english">bla bla bla bla</string>
+    <string name="difficultyEasy">Lett</string>
+    <string name="difficultyMedium">Medium</string>
+    <string name="difficultyHard">Vanskelig</string>
+    <string name="instruction_text">bla bla bla bla</string>
+
+    <string name="menu_enter_game">Start  spill</string>
+    <string name="menu_create_board">Lag brett</string>
+    <string name="menu_instructions">Instruksjoner</string>
+
+    <string name="game_rules_title">Spilleregler:</string>
+    <string name="game_rules">For å vinne spillet så må ingen vertikale eller horizontale ruter ha like verdier i seg.\n\nMan kan heller ikke ha like vertikale og horizontale ruter innenfor 3x3 grupper.</string>
+
+    <string name="other_instructions_title">Annet:</string>
+
+    <string name="other_instructions">Man kan markere ruter man er usikre på ved å trykke og holde inne på ruten man er usikker på. Da vil ruten skifte farge. \nDersom man vil fjerne fargen, så trykker man bare og holder inne på samme rute igjen, så vil fargen gå tilbake til normalt.
+        \n\nFor å sjekke om du har vunnet spillet, trykk på Sjekk knappen.
+    </string>
+
+    <string name="board_saved">Brett er lagret.</string>
+
+    <string name="general_error">Noe gikk galt.</string>
+
+    <string name="menu_back">Gå tilbake</string>
+    <string name="menu_exit">Avslutt spill</string>
+    <string name="in_game_check">Sjekk</string>
+
+    <string name="correct">Gratulere, du har vunnet!</string>
+    <string name="wrong">Feil!</string>
+
+    <string name="saveBoard">Lagre brett</string>
+    <string name="needToCheckDifficulty">Du må velge vanskelighetsgrad!</string>
+
+
+
+</resources>

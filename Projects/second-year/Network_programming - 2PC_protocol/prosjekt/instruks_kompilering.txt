@@ -1,0 +1,11 @@
+//Kompilere server fra kommandolinje
+g++ main.cpp -std=c++17 -pthread
+
+kjøre server:
+./a.out
+
+//Kompilere client:
+g++ testClientSocket.cpp -o testClient -std=c++17 -pthread
+
+kjøre klient:
+./testClient

@@ -1,0 +1,4 @@
+For å forsvare seg mot sql injection så er det alltid viktig å sanitere input, godta kun god input, i dette tilfellet så ønsker vi et varenummber, kun heltall.
+Alternativt så er det å benytte seg av preparedStatements som i java.
+
+Kun godta validert input, og avvise dårlig input.

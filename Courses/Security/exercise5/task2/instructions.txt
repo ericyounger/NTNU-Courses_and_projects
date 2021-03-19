@@ -1,0 +1,3 @@
+added -k to keep original files, also has mtime =7 which checks if files not modified in 7 days. and size is larger than
+10k.
+

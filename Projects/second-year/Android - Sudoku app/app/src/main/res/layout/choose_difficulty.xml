@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/easyDifficulty"
+        android:layout_width="290dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="174dp"
+        android:onClick="onDifficultySelection"
+        android:text="@string/difficultyEasy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mediumDifficulty"
+        android:layout_width="290dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="18dp"
+        android:onClick="onDifficultySelection"
+        android:text="@string/difficultyMedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/easyDifficulty" />
+
+    <Button
+        android:id="@+id/hardDifficulty"
+        android:layout_width="290dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="18dp"
+        android:onClick="onDifficultySelection"
+        android:text="@string/difficultyHard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mediumDifficulty" />
+
+    <Button
+        android:id="@+id/cancelEnterGame"
+        android:layout_width="144dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="136dp"
+        android:onClick="onCancelEnterGame"
+        android:text="@string/menu_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hardDifficulty" />
+</androidx.constraintlayout.widget.ConstraintLayout>

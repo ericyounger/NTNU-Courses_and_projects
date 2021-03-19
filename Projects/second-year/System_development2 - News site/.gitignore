@@ -1,0 +1,5 @@
+
+node_modules/*
+*flow/*
+node_modules/
+./klient/node_modules/

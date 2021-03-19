@@ -1,0 +1,71 @@
+Client 1:
+/home/evengul/CLionProjects/2PC-protocol/prosjekt/cmake-build-debug/client
+Client is running
+Connected with status 0
+
+Enter project filepath:
+/home/evengul/CLionProjects/2PC-protocol/prosjekt/
+The filepath is valid
+Starting up..
+Ready
+
+What would you like to do?
+1. Commit  | 2. Pull  | 3. Exit
+1
+You chose: 1
+
+Sending commit message, awaiting response..
+Sending changelog to server
+Data sent to server for commitment
+Commit is accepted
+28 files are being sent to server
+The upload was successful, keep on working.
+What would you like to do?
+1. Commit  | 2. Pull  | 3. Exit
+1
+Checking filesChecking filesYou chose: 1
+
+Sending commit message, awaiting response..
+Sending changelog to server
+Data sent to server for commitment
+We have a merge error that needs resolution before commit can take place
+
+Client 2:
+Enter project filepath:
+/home/evengul/CLionProjects/2PC-protocol/prosjekt/
+The filepath is valid
+Starting up..
+Ready
+
+What would you like to do?
+1. Commit  | 2. Pull  | 3. Exit
+1
+You chose: 1
+
+Sending commit message, awaiting response..
+Sending changelog to server
+Data sent to server for commitment
+Commit is accepted
+1 files are being sent to server
+
+Server:
+/home/evengul/CLionProjects/2PC-protocol/prosjekt/cmake-build-debug/server
+Server is running. Waiting for clients...
+New client has connected
+Waiting for clients...
+No other clients connected. Instant accept
+Client has been told of this.
+Updating server files
+
+28 files
+Ready to take in files
+Successful in this
+Commit is complete
+sh: -c: linje 0: uforventet slutt på fil (EOF) under søk etter «"»
+sh: -c: linje 1: syntaksfeil: uforventet slutt på fil
+New client has connected
+Waiting for clients...
+Asking clients for commit votes
+Updating server files
+
+Unsuccessful in this

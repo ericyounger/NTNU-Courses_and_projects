@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Sudoku</string>
+    <string name="instruction_english">bla bla bla bla</string>
+    <string name="difficultyEasy">Easy</string>
+    <string name="difficultyMedium">Medium</string>
+    <string name="difficultyHard">Hard</string>
+    <string name="instruction_text">bla bla bla bla</string>
+
+    <string name="menu_enter_game">Enter game</string>
+    <string name="menu_create_board">Create board</string>
+    <string name="menu_instructions">Instructions</string>
+
+    <string name="game_rules_title">Game Rules:</string>
+    <string name="game_rules">To win the game, you need to fill out all squares, and there can not be any similar numbers in either vertical or horizontal direction from each square.\n\nYou can not have similar numbers in vertical and horizontal direction within the 3x3 groups.</string>
+
+    <string name="other_instructions_title">Other things:</string>
+    <string name="other_instructions">You can mark squares that you are uncertain of by pressing on the square until it changes colour.\nTo remove the colour, simply just press the square again until it changes the colour back to normal.
+        \n\nTo check if you have won the game, hit the Check button.
+    </string>
+
+
+    <string name="general_error">Something went wrong.</string>
+
+    <string name="board_saved">Board saved!</string>
+
+
+    <string name="menu_back">Back</string>
+    <string name="menu_exit">Exit Game</string>
+    <string name="in_game_check">Check grid</string>
+
+    <string name="correct">You have won!</string>
+    <string name="wrong">Incorrect!</string>
+
+    <string name="saveBoard">Save Board</string>
+    <string name="needToCheckDifficulty">You need to select a difficulty!</string>
+
+
+
+
+</resources>

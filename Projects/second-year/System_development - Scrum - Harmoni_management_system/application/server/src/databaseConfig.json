@@ -1,0 +1,29 @@
+{
+  "config": {
+    "connectionLimit": 2,
+    "host": "hostname",
+    "user": "username",
+    "password": "password",
+    "database": "databasename",
+    "debug": false,
+    "multipleStatements": true
+  },
+  "testConfig": {
+    "connectionLimit": 2,
+    "host": "hostname",
+    "user": "username",
+    "password": "password",
+    "database": "databasename",
+    "debug": false,
+    "multipleStatements": true
+  },
+  "gitlabConfig":{
+    "connectionLimit": 2,
+    "host": "mysql",
+    "user": "root",
+    "password": "secret",
+    "database": "supertestdb",
+    "debug": false,
+    "multipleStatements": true
+  }
+}

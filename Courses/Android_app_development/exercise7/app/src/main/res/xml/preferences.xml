@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:dialogTitle="Select duration"
+        android:key="listPreference"
+        android:entries="@array/colorNames"
+        android:entryValues="@array/colors"
+        android:summary="Klikk for å velge farge"
+        android:title="Endre bakgrunnsfarge" />
+</PreferenceScreen>

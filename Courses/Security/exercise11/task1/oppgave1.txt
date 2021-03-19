@@ -1,0 +1,3 @@
+1a og b)
+
+Jeg kan ikke finne igjen meldingsteksten i pakkene da de er kryptert gjennom TLS. Det er mulig å fange opp både meldingsteksten og passordet dersom det ikke brukes kryptering.

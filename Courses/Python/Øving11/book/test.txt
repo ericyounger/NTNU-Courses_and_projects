@@ -1,0 +1,3 @@
+Use the first file (text file provided) to create a dictionary (histogram) of the words and their associated frequencies. You can then use the histogram to judge if a word in the second file is easy, has high frequency, or difficult.
+
+Added some more texts so program can see more paragraphs.
