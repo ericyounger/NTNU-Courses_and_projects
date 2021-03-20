@@ -11,4 +11,4 @@ My exercises for the course https://www.ntnu.no/studier/emner/IINI4001
 
 
 ### Sudoku project (Final Project)
-[See project here](/project)
+[See project here](https://github.com/ericyounger/NTNU-Courses_and_projects/tree/main/Projects/third-year/Android_Sudoku_app)
