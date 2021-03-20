@@ -2,7 +2,7 @@
 All of my assignments and projects from various courses during my time at NTNU.
 
 Courses:
-* [Programming Introductory](/Courses/Programming-Introductory)
+* [Programming, Introductory Java](/Courses/Programming-Introductory)
 * [Programming - Advanced Java](/Courses/Programmering-videregående)
 * [Algorithms and datastructures](/Courses/Algorithms_and_datastructures)
 * [Android app development](/Courses/Android_app_development)
