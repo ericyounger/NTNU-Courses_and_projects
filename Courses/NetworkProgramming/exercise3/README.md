@@ -2,6 +2,8 @@
 A site for running and compiling code online.
 Only supports Javascript code atm.
 
+Used node v10 for this project.
+
 ## Run this first to setup
 
 From root directory:
